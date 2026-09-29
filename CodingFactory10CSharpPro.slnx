@@ -12,6 +12,7 @@
   <Project Path="PrintingApp/PrintingApp.csproj" />
   <Project Path="ProductsVat/ProductsVat.csproj" />
   <Project Path="ProductWhileApp/ProductWhileApp.csproj" Id="20c09918-f28d-4e59-8cae-7aeaf8966a06" />
+  <Project Path="PyramidChallenge/PyramidChallenge.csproj" Id="6ca6c0a3-4326-4ca1-acd2-d5e9eb01abaf" />
   <Project Path="SwitchApp/SwitchApp.csproj" Id="de69c9dd-cfaa-4ea5-a69b-2a8029e2876b" />
   <Project Path="WhileApp/WhileApp.csproj" Id="05003de4-6244-47d3-98a1-9f05e6b31ee2" />
 </Solution>
