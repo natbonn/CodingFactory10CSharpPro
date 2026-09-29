@@ -1,8 +1,17 @@
 <Solution>
+  <Project Path="CitiesForApp/CitiesForApp.csproj" Id="5343b63d-5ae0-41a8-8e1e-270d579c05da" />
   <Project Path="DataTypes/DataTypes.csproj" />
+  <Project Path="DoWhileApp/DoWhileApp.csproj" Id="a1d384e2-4a93-480e-94d1-c7cb15a05801" />
+  <Project Path="FormatExceptionApp/FormatExceptionApp.csproj" Id="a577eb6d-b1ea-463f-b235-b1cf137ffa25" />
   <Project Path="HelloWorld/HelloWorld.csproj" />
+  <Project Path="IfUseCases/IfUseCases.csproj" Id="409c55bf-92e4-43e7-8890-a58b195182f3" />
   <Project Path="KilometersApp/KilometersApp.csproj" />
   <Project Path="NumberRead/NumberRead.csproj" />
+  <Project Path="PositivesCount/PositivesCount.csproj" Id="d86ae6cc-dda1-4dd6-9214-5e44152f4819" />
+  <Project Path="PowerApp/PowerApp.csproj" Id="e26a8ace-e47d-49f2-9216-33b72ddf5750" />
   <Project Path="PrintingApp/PrintingApp.csproj" />
   <Project Path="ProductsVat/ProductsVat.csproj" />
+  <Project Path="ProductWhileApp/ProductWhileApp.csproj" Id="20c09918-f28d-4e59-8cae-7aeaf8966a06" />
+  <Project Path="SwitchApp/SwitchApp.csproj" Id="de69c9dd-cfaa-4ea5-a69b-2a8029e2876b" />
+  <Project Path="WhileApp/WhileApp.csproj" Id="05003de4-6244-47d3-98a1-9f05e6b31ee2" />
 </Solution>
