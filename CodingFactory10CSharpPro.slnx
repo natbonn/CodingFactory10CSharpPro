@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="AccountApp/AccountApp.csproj" Id="ef3ac34d-840f-4422-a4bb-0a4de9e9244c" />
   <Project Path="ArraysApp/ArraysApp.csproj" Id="688f748e-c38e-4057-a3d4-8180f417b3e2" />
   <Project Path="CitiesForApp/CitiesForApp.csproj" Id="5343b63d-5ae0-41a8-8e1e-270d579c05da" />
   <Project Path="DataTypes/DataTypes.csproj" />
@@ -9,6 +10,7 @@
   <Project Path="IfUseCases/IfUseCases.csproj" Id="409c55bf-92e4-43e7-8890-a58b195182f3" />
   <Project Path="KilometersApp/KilometersApp.csproj" />
   <Project Path="NumberRead/NumberRead.csproj" />
+  <Project Path="OOApp/OOApp.csproj" Id="791c0c76-edf8-4a0f-861f-1d06183f6b68" />
   <Project Path="PositivesCount/PositivesCount.csproj" Id="d86ae6cc-dda1-4dd6-9214-5e44152f4819" />
   <Project Path="PowerApp/PowerApp.csproj" Id="e26a8ace-e47d-49f2-9216-33b72ddf5750" />
   <Project Path="PrintingApp/PrintingApp.csproj" />
@@ -17,5 +19,6 @@
   <Project Path="PyramidChallenge/PyramidChallenge.csproj" Id="6ca6c0a3-4326-4ca1-acd2-d5e9eb01abaf" />
   <Project Path="SwapApp/SwapApp.csproj" Id="b0255944-ab86-47e1-b29a-711ad551762a" />
   <Project Path="SwitchApp/SwitchApp.csproj" Id="de69c9dd-cfaa-4ea5-a69b-2a8029e2876b" />
+  <Project Path="UtilityClassesApp/UtilityClassesApp.csproj" Id="92a72ce8-dda3-4764-a0f3-bc1d0bcd88cd" />
   <Project Path="WhileApp/WhileApp.csproj" Id="05003de4-6244-47d3-98a1-9f05e6b31ee2" />
 </Solution>
