@@ -36,20 +36,31 @@ internal class Account
         }
     }
 
+    /// <summary>
+    /// Withdraw the specified amount from the account.
+    /// If the provided SSN does not match the account holder's SSN, 
+    /// an InvalidSsnException will be thrown.
+    /// </summary>
+    /// <param name="amount">The amount to withdraw.</param>
+    /// <param name="ssn">The SSN of the account holder.</param>
+    /// <exception cref="InvalidSsnException"> If the SSN does not match the account holder's SSN.</exception>
+    /// <exception cref="NegativeAmountException"> If the withdrawal amount is negative.</exception>
+    /// <exception cref="InsufficientBalanceException"> If there are insufficient funds for the withdrawal.</exception>
     public void Withdraw(decimal amount, string? ssn)
     {
         try
         {
             // sanity check for negative amount
-            if (string.IsNullOrEmpty(ssn)) throw new InvalidSsvnException("SSN cannot be null or empty.");
+            if (string.IsNullOrEmpty(ssn)) throw new InvalidSsnException("SSN cannot be null or empty.");
             // check for ssn match
-            if (ssn != Ssn) throw new InvalidSsvnException("SSN does not match the account holder's SSN.");
+            if (ssn != Ssn) throw new InvalidSsnException("SSN does not match the account holder's SSN.");
             if (amount < 0) throw new NegativeAmountException("Withdrawal amount cannot be negative.");
             if (amount > Balance) throw new NegativeAmountException("Insufficient funds for withdrawal.");
 
             Balance -= amount;
+            // Log the successful withdrawal
         }
-        catch (Exception ex) when (ex is InvalidSsvnException      // we can catch multiple exception 
+        catch (Exception ex) when (ex is InvalidSsnException      // we can catch multiple exception 
                                     or NegativeAmountException
                                     or InsufficientBalanceException)
         {

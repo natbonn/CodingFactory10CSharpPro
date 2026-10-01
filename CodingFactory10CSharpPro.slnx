@@ -11,6 +11,7 @@
   <Project Path="KilometersApp/KilometersApp.csproj" />
   <Project Path="NumberRead/NumberRead.csproj" />
   <Project Path="OOApp/OOApp.csproj" Id="791c0c76-edf8-4a0f-861f-1d06183f6b68" />
+  <Project Path="PointApp/PointApp.csproj" Id="eb4fec77-268a-4ed3-b4fa-7dec9853dd52" />
   <Project Path="PositivesCount/PositivesCount.csproj" Id="d86ae6cc-dda1-4dd6-9214-5e44152f4819" />
   <Project Path="PowerApp/PowerApp.csproj" Id="e26a8ace-e47d-49f2-9216-33b72ddf5750" />
   <Project Path="PrintingApp/PrintingApp.csproj" />
