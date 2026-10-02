@@ -126,7 +126,7 @@
         }
 
         /// <summary>
-        /// Finds the best sum of a 2D matrix and returns 
+        /// Finds the best 2x2 sum of a 2D matrix and returns 
         /// the sum along with its position (row and column) in the matrix.
         /// For example, if the matrix is:
         /// {
@@ -140,6 +140,27 @@
         /// <returns></returns>
         public static (long bestSum, int bestRow, int bestCol) FindBestSum(int[,] matrix) 
         {
+            long bestSum = long.MinValue;
+            int bestRow = 0;
+            int bestCol = 0;
+            long sum = 0;
+
+            for (int i = 0; i < matrix.GetLength(0) -1; i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1) - 1; j++)
+                {
+                    sum = matrix[i, j] + matrix[i, j + 1] 
+                        + matrix[i + 1, j] + matrix[i + 1, j + 1];
+                    if (sum > bestSum)
+                    {
+                        bestSum = sum;
+                        bestRow = i;
+                        bestCol = j;
+                    }
+                }
+            }
+
+            return (bestSum, bestRow, bestCol);
 
         }
     }
