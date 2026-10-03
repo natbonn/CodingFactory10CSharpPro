@@ -67,7 +67,7 @@
             string str10 = "    Hello World  ";
             string? trimmedStr = str10.Trim();  // "Hello World"
 
-            string? str11 = "   Hello World   ";
+            string? str11 = "   Hello World  $#  ";
             char[] trimChars = { ' ', '$', '%', '#' };
             string? trimmedStr2 = str11.Trim(trimChars);     // "Hello World"
 
