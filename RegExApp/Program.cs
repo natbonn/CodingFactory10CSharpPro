@@ -42,6 +42,4 @@ internal class Program
             Console.WriteLine(match.Value);
         }
     }
-
-   
 }
