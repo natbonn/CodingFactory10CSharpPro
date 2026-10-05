@@ -20,7 +20,7 @@ namespace AbstractApp
         // Οπωσδήποτε override της ToString() γιατί είναι abstract στην AbstractAnimal
         public override string ToString()
         {
-            return $"Cat: {Name}, Age: {Age}},";
+            return $"Cat: {Name}, Age: {Age}";
         }
     }
     

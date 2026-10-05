@@ -12,21 +12,23 @@
     {
         static void Main(string[] args)
         {
-            {int num = 0;
-
-            while (true)
             {
-                try
+                int num = 0;
+
+                while (true)
+                {
+                    try
                     {
                         Console.WriteLine("Παρακαλώ εισάγετε έναν αριθμό: ");
                         num = int.Parse(Console.ReadLine()!);
                         Console.WriteLine($"Ο αριθμός που εισάγατε είναι: {num}");
                         if (num == 0) break;
                     }
-                catch (FormatException e)
+                    catch (FormatException e)
                     {
                         Console.WriteLine(e.Message);
                     }
+                }
             }
         }
     }

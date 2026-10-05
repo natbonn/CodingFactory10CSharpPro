@@ -30,7 +30,7 @@ namespace OOApp
             Username = username;
             Email = email;
             Password = password;
-        })
+        }
 
 
 
