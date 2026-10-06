@@ -8,7 +8,7 @@
 
             // LINQ query to filter even numbers
             IEnumerable<int> allNumbers = from num in numbers
-                             select num;
+                                          select num;
 
             // για εκτέλεση θέλει foreach
             foreach (var num in allNumbers)
@@ -17,8 +17,8 @@
             }
 
             var evenNumbers = (from num in numbers
-                               where num % 2 == 0
-                               select num).ToList();
+                               where num % 2 == 0       // filter
+                               select num).ToList();    // map
 
             foreach (var num in evenNumbers)
             {
@@ -28,6 +28,40 @@
             // Mapping: LINQ query to square each number
             var squareNumbers = (from num in numbers
                                  select num + num).ToList();
+
+            var list = new List<int> { 5, 3, 8, 3, 1 };
+            var set = new HashSet<int> { 5, 3, 8, 3, 1 };
+            var grades = new Dictionary<string, int>
+            {
+                ["Alice"] = 85,
+                ["Bob"] = 90,
+                ["maria"] = 78
+            };
+
+
+            // Method syntax: LINQ wuery to filter even numbers
+
+            // filtering
+            var evenNumbers2 = numbers.Where(num => num % 2 == 0).ToList();
+            var sortedSet = set.OrderBy(num => num).ToList();
+
+            // map
+            var squares = set.Select(num => num * num).ToHashSet();
+            var evenSquares = set.Where(num => num % 2 == 0).Select(num => num * num).ToHashSet();
+
+            var passed = grades.Where(kv => kv.Value >= 50).Select(kv => kv.Key).ToList();
+            var top = grades.Where(kv => kv.Value >= 80).OrderByDescending(kv => kv.Value).ToDictionary(kv => kv.Key, kv => kv.Value);
+
+            // Reduction
+            var avg = grades.Values.Average();
+            var minNum = numbers.Min();
+            var maxNum = numbers.Max();
+            var countNums = numbers.Count();
+
+            // Aggregation
+            bool allPassed = grades.All(kv => kv.Value >= 50);
+            bool anyPassed = grades.Any(kv => kv.Value >= 50);
+
         }
     }
 }
