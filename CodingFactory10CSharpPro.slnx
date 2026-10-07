@@ -34,5 +34,6 @@
   <Project Path="SwapApp/SwapApp.csproj" Id="b0255944-ab86-47e1-b29a-711ad551762a" />
   <Project Path="SwitchApp/SwitchApp.csproj" Id="de69c9dd-cfaa-4ea5-a69b-2a8029e2876b" />
   <Project Path="UtilityClassesApp/UtilityClassesApp.csproj" Id="92a72ce8-dda3-4764-a0f3-bc1d0bcd88cd" />
+  <Project Path="WebAppStarter10/WebAppStarter10.csproj" Id="6dfc5bb7-63de-4f5f-ba93-bd3002639238" />
   <Project Path="WhileApp/WhileApp.csproj" Id="05003de4-6244-47d3-98a1-9f05e6b31ee2" />
 </Solution>
