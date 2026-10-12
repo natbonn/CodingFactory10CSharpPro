@@ -10,13 +10,12 @@
 
     <form method="get">
         <div class="input-group w-50">
-            <input type="text" name="lastname" class="form-control"
-            placeholder="Enter Lastname"/>
-            <button type="submit" class="btn btn-primary"></button>
+            <input type="text" name="lastname" class="form-control" placeholder="Enter Lastname"/>
+            <button type="submit" class="btn btn-primary">Filter</button>
         </div>
     </form>
 
-    @if (Model.StudentsReadOnlyDTOs.Any())
+    @if (Model.StudentReadOnlyDTOs.Any())
     {
         <table class="talbe table-dark text-center w-75">
             <thead>
@@ -30,24 +29,20 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var studentReadOnlyTO in Model.StudentReadOnlyDTOs)
+                @foreach (var studentReadOnlyDTO in Model.StudentReadOnlyDTOs)
                 {
                     <tr>
-                        <th>@studentReadOnlyTO.Id</th>
-                        <th>@studentReadOnlyTO.Firstname</th>
-                        <th>@studentReadOnlyTO.Lastname</th>
+                        <th>@studentReadOnlyDTO.Id</th>
+                        <th>@studentReadOnlyDTO.Firstname</th>
+                        <th>@studentReadOnlyDTO.Lastname</th>
                     </tr>
                 }
             </tbody>
-
-
-
         </table>
     }
     else
     {
         <p>No Students found.</p>
     }
-
 
 </div>

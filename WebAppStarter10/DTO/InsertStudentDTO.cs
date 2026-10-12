@@ -15,6 +15,5 @@ public record InsertStudentDTO
     int SelectedCityId
 )
 {
-    public InsertStudentDTO() : this(default, default, default)
-}
-
+    public InsertStudentDTO() : this(default, default, default) { }
+};
